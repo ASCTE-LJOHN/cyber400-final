@@ -1,7 +1,6 @@
 # source: https://www.elastic.co/guide/en/elastic-stack/8.13/installing-elastic-stack.html
 
-# ensure system is configured to have IP = 192.168.0.199
-# TODO
+# (1) Ensure the system has internet connection for package download
 
 # Configure directory
 # cd /home/kali
@@ -42,6 +41,9 @@ sudo /usr/share/kibana/bin/kibana-verification-code > k_verif_code.txt
 sudo /bin/systemctl daemon-reload
 sudo /bin/systemctl enable kibana.service
 sudo systemctl start kibana.service
+
+# Configure system to have IP = 192.168.0.199
+# TODO
 
 # copy elasticsearch.yml file appropriately
 # TODO
