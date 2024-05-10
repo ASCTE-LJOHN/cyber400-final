@@ -17,6 +17,7 @@ sudo docker ps -a
 sudo apt install rsyslog rsyslog-elasticsearch -y
 
 # (4) Copy 00-elasticsearch.conf to rsyslog config directory
-cp ~/cyber400-final/00-elasticsearch.conf /etc/rsyslog.d
+sudo cp ~/cyber400-final/00-elasticsearch.conf /etc/rsyslog.d
+sudo systemctl restart rsyslog
 
 # sudo reboot now
