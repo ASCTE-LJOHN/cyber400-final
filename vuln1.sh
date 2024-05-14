@@ -7,7 +7,7 @@
 
 ## Procedure
 # Install docker & docker compose
-cd ~
+cd ~/cyber400-final
 ./install-docker-kali.sh
 
 # Download VulnerableDockerfile project and run it
