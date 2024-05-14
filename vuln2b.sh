@@ -8,7 +8,7 @@
 ## Procedure
 # Install docker & docker compose
 cd ~
-./install-docker-kali.shell
+./install-docker-kali.sh
 
 # Download and configure DVWA container
 cd ~
