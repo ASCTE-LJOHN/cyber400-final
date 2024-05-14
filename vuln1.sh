@@ -13,5 +13,12 @@ cd ~/cyber400-final
 # Download VulnerableDockerfile project and run it
 cd ~
 git clone https://github.com/SamP10/VulnerableDockerfile
-cd VulnerableDockerfile/vulnContainer
+cd VulnerableDockerfile
+git clone https://github.com/SamP10/UniVulnerableWebsite.git
+mv UniVulnerableWebsite ./vulnContainer
+cd vulnContainer
+
+# Disconnect from public Wi-Fi
+# Connect to private Wi-Fi
+
 sudo docker compose up -d
