@@ -6,6 +6,8 @@
 # make shell scripts executable
 
 ## Procedure
+# sudo hostname vuln1
+
 # Install docker & docker compose
 cd ~/cyber400-final
 ./install-docker-kali.sh
@@ -22,3 +24,5 @@ cd vulnContainer
 # Connect to private Wi-Fi
 
 sudo docker compose up -d
+
+# Install SCC on linux
