@@ -1,0 +1,12 @@
+[Unit]
+Description=Vulnerable Flask App
+After=network.target
+
+[Service]
+User=ubuntu
+ExecStart=/usr/bin/python3 /home/ubuntu/vulpy/bad/vulpy.py
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
