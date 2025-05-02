@@ -3,13 +3,12 @@
 # source: https://www.elastic.co/downloads/elastic-agent
 
 # (1) Download and extract the installation package.
-cd ~
 curl -L -O https://artifacts.elastic.co/downloads/beats/elastic-agent/elastic-agent-9.0.0-linux-arm64.tar.gz
 tar xzvf elastic-agent-9.0.0-linux-arm64.tar.gz
 
 # (2) Modify settings in the elastic-agent.yml as required.
 cd elastic-agent-9.0.0-linux-arm64
-cp ~/siem-files/elastic-agent.yml .
+cp ../elastic-agent.yml .
 
 # (5) From the agent directory, run the following commands to install Elastic Agent and start it as a service.
 sudo ./elastic-agent install -n # yes then no
