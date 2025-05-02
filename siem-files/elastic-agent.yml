@@ -1,0 +1,38 @@
+# elastic-agent.yml file with help (and hurt) from chatGPT
+# Cyber 400'25, final project
+
+agent:
+  monitoring:
+    enabled: true
+    logs: true
+    metrics: true
+
+inputs:
+  - type: journald
+    id: systemd_journal_logs
+    seek: cursor
+
+  # - type: log
+  #   id: system_logs
+  #   paths:
+  #     - /var/log/*.log
+  #     - /var/log/*/*.log
+
+outputs:
+  default:
+    type: elasticsearch
+    hosts: ["192.168.0.15:9200"]
+    # username: "elastic"
+    # password: "changeme"
+    # protocol: "https"
+    # ssl:
+    #   certificate_authorities: ["/path/to/ca.crt"]
+
+# Configure logging for the Elastic Agent itself
+logging:
+  level: info
+  json: true
+
+# Enable the system integration
+system:
+  enabled: true
