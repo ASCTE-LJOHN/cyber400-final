@@ -12,3 +12,9 @@ cp ../elastic-agent.yml .
 
 # (5) From the agent directory, run the following commands to install Elastic Agent and start it as a service.
 sudo ./elastic-agent install -n # yes then no
+
+
+## uninstall instructions
+# sudo elastic-agent uninstall
+# sudo rm -rf /opt/Elastic/Agent
+# sudo rm -rf /etc/elastic-agent
